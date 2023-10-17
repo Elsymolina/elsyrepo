@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'fuenteHero';
+    src: url('../fonts/Watone.ttf') format('truetype');
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0B4047;
+}
+
+/* ESTILO GENERAL SECCIONES -------------------------------------------------*/
+
+.sectionActiv, 
+.sectionNosotros,
+.sectionEquipo,
+.sectionNum,
+.sectionContacto, 
+.sectionGalería{
+    width: 95%;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    color: #f3f3f3;
+}
+.tituloSection, 
+.introSection {
+    text-align: center;
+} 
+.tituloSection {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.introSection {
+    font-size: 1rem;
+    margin-bottom: 60px;
+    width: 80%;
+    align-self: center;
+}
+
+/* HEADER INICIO ------------------------------------------------------------*/
+
+.caja-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #04343B;
+}
+.caja-header-nav {
+    display: flex;
+    width: 100%;
+}
+.img-logo {
+    align-self: center;
+    width: 100px;
+    height: auto;
+}
+
+/* BARRA DE NAVEGACION ------------------------------------------------------------*/
+
+.barra-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    gap: 2vw;
+    padding: 0;
+}
+.menu li {
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    color: #b9b7b7;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: #f3f3f3;
+    text-shadow: 0px 0px 5px #181616;
+}
+
+/* BARRA DE BUSQUEDA ------------------------------------------------------------*/
+
+.searchBox {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    align-items: center;
+    margin-right: 20px;
+}    
+.input-search {
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ddd;
+    border: none;
+    box-shadow: 2px -2px 2px #000;
+}    
+.input-search:focus {
+    background-color: #fff;
+    transition: all 0.25s;
+    width: 200px;
+    outline: none;
+}    
+.button-search {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #b9b7b7;
+}    
+.button-search:hover{
+    color: #f3f3f3;
+}
+/* MAIN INICIO ----------------------------------------------------------------------*/
+
+.caja-mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    text-align: center;
+    font-family: 'fuenteHero', sans-serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #000;
+}
+.mensajes {
+    position: absolute;
+    width: 80%;
+}
+.imagen-inicio {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.caja-article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: #fff;
+}
+
+/* ARTÍCULO LATERAL DERECHO -------------------------------- */
+
+.caja-grande {
+    width: 70%;
+    height: auto;
+    background: #034e61 url(../img/3.jpg) center center/cover;
+    background-blend-mode: multiply;
+    text-shadow: 2px 2px 2px #000;
+    text-align: left;
+}
+.titulo-caja-grande {
+    font-size: 2.5rem;
+}
+.caja-grande1 {
+    padding: 8vw;
+    text-align: left;
+}
+.caja-grande1 p {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+/* ARTÍCULOS LATERAL IZQUIERDO -------------------------------- */
+
+.caja-chica {
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    height: auto;
+}
+.caja-chica > div{
+    padding: 30px;
+    flex:1;
+}
+.caja-chica1 {
+    background-color: #075661;
+}
+.caja-chica2 {
+    background-color: #096D7A;
+}
+.caja-chica3 {
+    background-color: #1A9CAD;
+}
+
+/* PÁGINA SOBRE NOSOTROS -------------------------------------------------------------------*/
+
+/* ARTÍCULO SOBRE NOSOTROS*/
+.articulo1 {
+    padding:3vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    background-color: #096D7A;
+}
+.imgArt1 {
+    flex: 1;
+    width: 550px;
+    height: auto;
+}
+.textoArt1 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/* SECCIÓN COACHES */
+.sectionEquipo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.containerCoaches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vw;
+    justify-items: center;
+}
+.cardCoach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cardCoach img {
+    width: 80%;
+    border-radius: 50%;
+}
+.cardCoach p {
+    padding: 0 2vw;
+}
+
+/* SECCIÓN NUMEROS */
+.sectionNum {
+    display: flex;
+    flex-direction: row;
+}
+.numBox {
+    width: 100%;
+    padding: 0 2vw;
+    border-left: 1px solid #f3f3f3;
+    text-align: center; 
+}
+.num {
+    font-size: 4rem;
+    color: rgb(29,170,204);
+}
+.numBox p{
+    font-size: 0.8rem;
+}
+
+/* GALERIA ---------------------------------------------------------------------------------*/
+
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.cardGallery {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* FOOTER --------------------------------------------------------------------------*/
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #04343B;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    font-size: 1rem;
+    gap: 2vw;
+}
+.footer-logo-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.caja-redes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.link-redes {
+    color: #fff;
+}
+.texto-titulos {
+    color: #1ba9cb;
+    margin: 10px;
+}
+.texto-titulos i{
+    color: #1ba9cb;
+}
+.texto-copyright {
+    font-size: 0.8rem;
+}
+.img-footer {
+    width: 20px;
+    vertical-align: middle;
+    filter: invert(64%) sepia(53%) saturate(5194%) hue-rotate(155deg) brightness(98%) contrast(79%);
+}
+
+/* TARJETAS DE ACTIVIDADES --------------------------------------------------------------*/
+
+.containerActiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 3vh;
+    column-gap: 1.2vw;
+    justify-items: center;
+}
+.cardActiv {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    color: #f3f3f3; 
+    perspective: 600px;
+    /* animación de rotación */
+}
+
+.cardActiv .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px black;
+    overflow: hidden;
+    backface-visibility: hidden;
+    /* animación de rotación */
+    transition: .5s;
+    /* animación de rotación */
+}
+
+/* FRENTE DE LA TARJETA */
+.cardActiv .front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    /* animación de rotación */
+}
+.cardActiv .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardActiv .front h3 {
+    position: absolute;
+    width: 100%;
+    color: #f3f3f3;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+        40px 30px 0 rgba(29, 170, 204, 0.7),
+        -40px -30px 0 rgba(80, 104, 112, 0.7);
+    font-size: 2.5rem;
+}
+
+/* DORSO DE LA TARJETA */
+.cardActiv .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(65, 84, 90, .5);
+    text-align: center;
+    font-size: 1.2rem;
+    transform: rotateY(180deg);
+    /* animación de rotación */
+}
+
+.cardActiv .back h3 {
+    margin: 0 auto 5%;
+    width: 80%;
+    color: rgb(29, 170, 204);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.cardActiv:hover .front {
+    /* animación de rotación */
+    transform: rotateY(180deg);
+}
+
+.cardActiv:hover .back {
+    /* animación de rotación */
+    transform: rotateY(360deg);
+
+}
+
+/* ANIMACIÓN DE OPACIDAD TARJETAS INACTIVAS*/
+.containerActiv:has(:hover)>.cardActiv:not(:hover) {
+    opacity: .4;
+}
+
+.cardActiv {
+    transition: .5s;
+}
+
+/* MEDIA QUERYS PAG INICIO --------------------------------------------------- */
+
+@media (max-width: 890px) {
+
+    body {
+        padding-bottom: 25em;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .caja-header {
+        background-image: url(../img/gym1.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .caja-logo {
+        margin: 10px;
+    }
+
+    .barra-nav {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .caja-nav {
+        display: flex;
+        flex-direction: column;
+        top: 150px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a{
+        font-size: 1rem;
+    }
+
+    .searchBox {
+        position: static;
+    }
+
+    .caja-article {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+    
+    .caja-grande {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .caja-chica {
+        width: 100%;
+    }
+
+    .caja-header-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        top: 80px;
+        left: 0;
+        background-image: url(../img/gym1.png);
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    /* QUERYS FOOTER --------------------------------------------------- */
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .caja-redes {
+        gap: 50px;
+    }
+
+    .caja-mensaje {
+        font-size: 0.7rem;
+        
+    }
+
+     /* QUERYS SOBRE NOSOTROS --------------------------------------------------- */
+
+    .textoArt1,
+    .imgArt1 {
+        max-width: 90%;
+    }
+
+    .containerCoaches {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .sectionNum {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numBox {
+        border:none;
+        background-color: #075661;
+    }
+}
+
+ /* CONTACTO --------------------------------------------------- */
+
+
+ #contact-form{
+    text-align: center;
+    border: 1px solid #ccc;
+    background: white;
+    
+}
+
+
+
+ #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+        width: 300px;
+}
+
+.form-contacto2
+{
+
+max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);}
+ /* MAPA --------------------------------------------------- */
+
+.maps {
+    text-align: center;
+    color: white;
+
+}
+#contact-form {
+border: 2px solid #000;
+      padding: 10px; 
+       }
+

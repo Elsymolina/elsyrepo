@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title> Contacto</title>
+    
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="caja-header">
+            <div class="caja-header-nav">
+
+                <div class="caja-logo">
+                    <a href="../index.html">
+                        <img src="../img/logo4.png" alt="Logo Codo Power Gym" class="img-logo">
+                    </a>
+                </div>
+
+                <nav class="barra-nav">
+                    <ul class="menu nav-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="searchBox">
+                <form action="">
+                    <input type="search " placeholder="Buscar..." class="input-search">
+                    <button class="button-search"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <!-- MAIN -->
+    <main>
+        <section class="sectionContacto">
+            <h1 class="tituloSection">Contacto</h1>
+        </section>
+   
+
+        <div class="form-contacto" style="text-align: center; color:white;">
+
+            <h2>Completá el formulario para comunicarte con nosotros</h2>
+
+        </div> 
+
+        
+
+        <div class="form-contacto2">
+            <section id="contact-form">
+              
+            
+            <form action="procesar_formulario.php" method="POST">
+
+                <br>
+                <label for="Nombre">Nombre y Apellido:</label>
+                <input type="text" id="Nombre" name="Nombre" required>  <br><br>
+                      
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br><br>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea> <br><br>
+                
+
+                <button type="submit" onclick="alert('¡Pronto nos comunicaremos con vos!')" >Enviar</button>  <br><br>
+            </form>
+        </section>
+    </div>
+       
+        <div class="maps">
+            <section id="map">
+                <h2>Ubicación</h2>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.933694225861!2d-58.430357425248054!3d-34.580544256273136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aabcb7b7fd341%3A0xd4d803156d38286c!2sDistrito%20Arcos%20Premium%20Outlet!5e0!3m2!1ses-419!2sar!4v1697564816049!5m2!1ses-419!2sar" width="850" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </section>
+            <br>
+            <br>
+        </main>
+
+        <br>
+            <br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="footer-logo-redes">
+                <img src="../img/logo4.png" alt="Logo Codo Power Gym" class="img-logo">
+                <div class="caja-redes">
+                    <a href="https://www.facebook.com" target="_blank" class="link-redes"><i class="bi bi-facebook"></i></a>
+                    <a href="https://wa.me/+5491100000000" target="_blank" class="link-redes"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="link-redes"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.google.com/maps" target="_blank" class="link-redes"><i class="bi bi-geo-alt"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="texto-titulos">LLAMANOS</h3>
+                <img src="../img/llamada.png" alt="" class="img-footer">
+                <span>123 456 7890</span>
+            </div>
+            <div>
+                <h3 class="texto-titulos">UBICACION</h3>
+                <img src="../img/position.png" alt="" class="img-footer">
+                <span>Calle 1234 | Localidad</span>
+            </div>
+            <div>
+                <h3 class="texto-titulos">HORARIOS</h3>
+                <img src="../img/reloj.png" alt="" class="img-footer">
+                <span>Lunes a Viernes 08:00 a 23:00</span>
+                <br>
+                <span>Sábados y Domingos 09:00 a 20:00</span>
+            </div>
+        </div>
+        <div>
+            <span class="texto-copyright">&copy; 2023 Codo Power Gym. Todos los derechos reservados. Codo a Codo 4.0</span>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
